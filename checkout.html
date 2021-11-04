@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Style.css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Summit Gear | Home</title>
+</head>
+
+<body>
+    <header>
+        <!--Nav-->
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><i class="fas fa-mountain"></i></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link">Our Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link">Shopping Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="p-5">
+            <h2>Checkout</h2>
+            <form method="GET" class="row g-3">
+                <div class="col-md-8">
+                    <label for="validfirstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="validfirstname" placeholder="Mark" required>
+                </div>
+
+                <div class="col-md-8">
+                    <label for="validlastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="validlastname" placeholder="Otto" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="validemail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="validemail" placeholder="mark.otto@email.com" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="validphone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="validphone" placeholder="123456789" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="validcard" class="form-label">Card Number</label>
+                    <input type="number" class="form-control" id="validcard" placeholder="1234567890121314" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="validdate" class="form-label">Card Expiration Date</label>
+                    <input type="date" class="form-control" id="validdate" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="validcvv" class="form-label">CVV </label>
+                    <input type="number" class="form-control" id="validcvv" placeholder="123" required>
+                </div>
+
+                <div class="col-md-8">
+                    <label for="validaddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="validaddress" placeholder="123 Summit Avenue" required>
+                </div>
+
+                <div class="col-md-8">
+                    <label for="validcity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validcity" placeholder="Staten Island" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="validstate" class="form-label">State</label>
+                    <select class="form-select" id="validstate" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>New York</option>
+                        <option>New Jersey</option>
+                        <option>Maine</option>
+                        <option>Conneticut</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="validzip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validzip" 
+                    placeholder="00000" required maxlength="5">
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+                        <label class="form-check-label" for="invalidCheck2">
+                            Save as default
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Order</button>
+                </div>
+            </form>
+        </section>
+        <section class="p-5">
+            <p>View more items</p>
+            <a href="product.html" class="btn btn-primary">See All Products</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-5 text-dark text-center position-relative footer">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Summit Gear</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
